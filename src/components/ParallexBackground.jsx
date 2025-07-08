@@ -51,4 +51,4 @@ return (
   )
 }
 
-export default ParallexBackground
+export default ParallexBackground;
