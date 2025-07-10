@@ -1,6 +1,7 @@
 import Card from "../components/Card";
 import { useRef } from "react";
 import { Globe } from "../components/globe";
+import CopyEmailButton from "../components/CopyEmailButton";
 
 const About = () => {
   
@@ -43,7 +44,12 @@ const About = () => {
           <figure className="absolute left-[30%] top-[10%]"> <Globe /> </figure>
         </div>
         {/* {Grid 3} */}
-        <div className="grid-special-color grid-4"> </div>
+        <div className="grid-special-color grid-4">
+          <div className="flex flex-col items-center justify-center gap-4 size-full">
+             <p className="text-center headtext"> Would You like to Work With Me? </p>
+             <CopyEmailButton/>
+          </div> 
+          </div>
         {/* {Grid 3} */}
         <div className="grid-default-color grid-5"> </div>
 

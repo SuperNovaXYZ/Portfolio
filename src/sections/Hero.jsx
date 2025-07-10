@@ -8,6 +8,7 @@ import { easing } from "maath";
 import { Float } from "@react-three/drei";
 import { Suspense } from "react";
 import  Loader  from "../components/Loader";
+import { Dinosaur } from "../components/Dinosaur";
 
 
 const Hero = () => {
@@ -21,6 +22,7 @@ const Hero = () => {
           <Suspense fallback={<Loader/>}>
           <Float>
           <Astronaut scale={isMobile && 0.23} position={isMobile && [0,-1.5,0]}/> 
+          {/* <Dinosaur scale={1.65} position={[0, -2, 0]} /> */}
         </Float>
         <Rig/> 
         </Suspense>
