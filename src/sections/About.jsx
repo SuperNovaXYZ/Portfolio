@@ -2,6 +2,7 @@ import Card from "../components/Card";
 import { useRef } from "react";
 import { Globe } from "../components/globe";
 import CopyEmailButton from "../components/CopyEmailButton";
+import { Frameworks } from "../components/Frameworks";
 
 const About = () => {
   
@@ -24,7 +25,7 @@ const About = () => {
         {/* {Grid 2} */}
         <div className="grid-default-color grid-2"> 
           <div ref={grid2Container} className="flex items-center justify-center w-full h-full" > 
-            <p className="flex items-end text-5xl text-gray-500"> CODE IS CRAFT </p>
+            <p className="flex items-end text-5xl text-gray-500"> CODE </p>
             <Card style={{rotate:"75deg",top:"30%", left:"20%"}} text="Grasp" containerRef={grid2Container}/>
             <Card style={{rotate:"-30deg",top:"60%", left:"45%"}} text="Solid" containerRef={grid2Container}/>
             <Card style={{rotate:"90deg",bottom:"30%", left:"70%"}} text="Design" containerRef={grid2Container}/>
@@ -43,15 +44,21 @@ const About = () => {
           </div>
           <figure className="absolute left-[30%] top-[10%]"> <Globe /> </figure>
         </div>
-        {/* {Grid 3} */}
+        {/* {Grid 4} */}
         <div className="grid-special-color grid-4">
           <div className="flex flex-col items-center justify-center gap-4 size-full">
              <p className="text-center headtext"> Would You like to Work With Me? </p>
              <CopyEmailButton/>
           </div> 
           </div>
-        {/* {Grid 3} */}
-        <div className="grid-default-color grid-5"> </div>
+        {/* {Grid 5} */}
+        <div className="grid-default-color grid-5"> 
+          <div className= "z-10 w-[50%]">
+            <p className="headtext"> Tech Stack</p>
+            <p className="subtext"> I specialize in a variety of Tools, Frameworks, and Libraries in order to complete projects!</p>
+          </div>
+          <div className="absolute -inset-y-0 md:inset-y-9 w-full h-full start-[50%] md:scale-125"> <Frameworks/> </div>
+        </div>
 
         
         
